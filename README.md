@@ -3,7 +3,7 @@ Jenkins Pipeline Tutorial
 
 
 
-1.
+#webhook
 ngrok http 8080
 webhook create
 webhook ngrok http link paste /github-webhook/
@@ -111,3 +111,5 @@ pipeline {
 }
 
 
+20 commands of linux
+compgen -c

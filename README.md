@@ -176,7 +176,7 @@ cd /etc/puppet/code/environments/production/manifests/
 sudo nano site.pp
 Following manifests to be written in site.pp
 
-file {'/tmp/shree.txt':
+file {'/tmp/hi.txt':
 ensure => present,
 mode =>  '0644',
 content => "it works on ${ipaddress_eth0}! \n",
@@ -210,4 +210,25 @@ ensure => installed,
 ### On slave terminal
 ```
 After writing every manifest, sudo puppet agent --test
+```
+
+### After every manifest
+##### For 1st manifest - On slave
+```
+cd
+cd /tmp
+cat hi.txt
+```
+
+##### For 2nd manifest - On browser
+```
+go to Slave's Ip address
+nginx webpage shows
+
+```
+
+##### For 2nd manifest - On browser
+```
+go to Slave's Ip address
+Apache2 webpage shows
 ```

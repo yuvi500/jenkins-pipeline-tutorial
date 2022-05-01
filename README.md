@@ -229,7 +229,6 @@ cat hi.txt
 ```
 go to Slave's Ip address
 nginx webpage shows
-
 ```
 
 ##### For 3rd manifest - On browser

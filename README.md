@@ -190,8 +190,9 @@ file {'/tmp/status.txt':
 content => 'nginx installed',
 mode =>  '0644',
 }
-
 }
+
+
 node default {
 exec { 'apt-update': 
 # exec resource named 'apt-update'

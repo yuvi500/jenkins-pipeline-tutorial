@@ -170,6 +170,7 @@ sudo puppet agent --test
 
 # Puppet Manifest
 ### On Master terminal
+```
 sudo mkdir -p /etc/puppet/code/environments/production/manifests/
 cd /etc/puppet/code/environments/production/manifests/
 sudo nano site.pp
@@ -204,6 +205,8 @@ require => Exec['apt-update'],
 ensure => installed,
 }
 }
-
+```
 ### On slave terminal
+```
 After writing every manifest, sudo puppet agent --test
+```

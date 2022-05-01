@@ -170,6 +170,7 @@ sudo puppet agent --test
 
 # Puppet Manifest
 ### On Master terminal
+### Manifest 1
 ```
 sudo mkdir -p /etc/puppet/code/environments/production/manifests/
 cd /etc/puppet/code/environments/production/manifests/
@@ -181,7 +182,9 @@ ensure => present,
 mode =>  '0644',
 content => "it works on ${ipaddress_eth0}! \n",
 }
-
+```
+### Manifest 2
+```
 node default{
 package {'nginx':
 ensure => installed,
@@ -191,8 +194,9 @@ content => 'nginx installed',
 mode =>  '0644',
 }
 }
-
-
+```
+### Manifest 3
+```
 node default {
 exec { 'apt-update': 
 # exec resource named 'apt-update'

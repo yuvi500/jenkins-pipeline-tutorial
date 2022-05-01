@@ -175,7 +175,7 @@ sudo mkdir -p /etc/puppet/code/environments/production/manifests/
 cd /etc/puppet/code/environments/production/manifests/
 sudo nano site.pp
 ```
-###Following manifests to be written in site.pp
+### Following manifests to be written in site.pp
 ### Manifest 1
 ```
 file {'/tmp/hi.txt':
@@ -232,7 +232,7 @@ nginx webpage shows
 
 ```
 
-##### For 2nd manifest - On browser
+##### For 3rd manifest - On browser
 ```
 go to Slave's Ip address
 Apache2 webpage shows

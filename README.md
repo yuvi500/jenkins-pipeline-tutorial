@@ -6,7 +6,7 @@ Jenkins Pipeline Tutorial
 1.
 ngrok http 8080
 webhook create
-webhook ngrok http link paste
+webhook ngrok http link paste /github-webhook/
 webhook applicaton json
 build triggers : github hook trigger for gitscm polling
 pipeline: defn: pipeline script from scm

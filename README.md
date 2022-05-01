@@ -170,13 +170,14 @@ sudo puppet agent --test
 
 # Puppet Manifest
 ### On Master terminal
-### Manifest 1
 ```
 sudo mkdir -p /etc/puppet/code/environments/production/manifests/
 cd /etc/puppet/code/environments/production/manifests/
 sudo nano site.pp
-Following manifests to be written in site.pp
-
+```
+###Following manifests to be written in site.pp
+### Manifest 1
+```
 file {'/tmp/hi.txt':
 ensure => present,
 mode =>  '0644',

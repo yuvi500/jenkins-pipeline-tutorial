@@ -54,3 +54,17 @@ echo "Your name is %str1%"
 echo "Your Surname is %str2%"
 echo "Your Favorite City is %city%"
 echo "Are you a student %student%"
+
+
+3.
+git init
+git clone url
+cd 
+git remote add origin url
+git config --global user.name "your_username"
+git config --global user.email "your_email_address@example.com"
+git pull
+git push
+git fetch 
+git status
+git merge

@@ -144,8 +144,7 @@ sudo apt-get install puppetmaster
 apt policy puppetmaster
 sudo systemctl status puppet-master.service
 sudo nano /etc/default/puppet-master
-Add this line in the puppet master file: JAVA_ARGS=“-Xms512m -
-Xmx512m”
+Add this line in the puppet master file: JAVA_ARGS="-Xms512m -Xmx512m"
 sudo systemctl restart puppet-master.service
 sudo ufw allow 8140/tcp
 sudo nano /etc/hosts

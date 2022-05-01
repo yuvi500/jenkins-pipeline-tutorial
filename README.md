@@ -61,6 +61,14 @@ echo "Your Favorite City is %city%"
 echo "Are you a student %student%"
 ```
 
+# maven and ant
+### maven
+goals and options: clean compile test package
+output directory : C:\ProgramData\Jenkins\.jenkins\workspace\maventry\target
+
+###ant
+
+
 # pipeline with stages and parameters
 ```
 pipeline {

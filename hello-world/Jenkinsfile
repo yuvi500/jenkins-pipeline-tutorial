@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Static Analysis') {
             steps {
-                echo 'Changed it bruh' 
+                echo 'Changed it again bruh' 
             }
         }
         stage('Compile') {

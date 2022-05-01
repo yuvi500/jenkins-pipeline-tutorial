@@ -27,9 +27,9 @@ D:
 cd D:\joBhiHai
 javac ulala.java
 java ulala 
-
-
-
+```
+### with parameters
+```
 make java file for parameters
 This project is parameterized
 string1

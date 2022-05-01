@@ -1,22 +1,23 @@
-# jenkins-pipeline-tutorial
-Jenkins Pipeline Tutorial
-
-
-
-# webhook
+# 20 commands of linux
 ```
-ngrok http 8080
-webhook create
-webhook ngrok http link paste /github-webhook/
-webhook applicaton json
-build triggers : github hook trigger for gitscm polling
-pipeline: defn: pipeline script from scm
-scm git
-repo url
-script path: hello-world/Jenkinsfile
-build manually once
-FInally update github repo
+compgen -c
 ```
+
+# git fetch push pull merge
+```
+git init
+git clone url
+cd 
+git remote add origin url
+git config --global user.name "your_username"
+git config --global user.email "your_email_address@example.com"
+git pull
+git push
+git fetch 
+git status
+git merge
+```
+
 
 # java jenkins
 ### without parameters
@@ -51,7 +52,6 @@ javac ulala.java
 java ulala %string1% %string2%
 ```
 
-
 # batch jenkins
 ### for parameters code
 ```
@@ -60,22 +60,6 @@ echo "Your Surname is %str2%"
 echo "Your Favorite City is %city%"
 echo "Are you a student %student%"
 ```
-
-# git fetch push pull merge
-```
-git init
-git clone url
-cd 
-git remote add origin url
-git config --global user.name "your_username"
-git config --global user.email "your_email_address@example.com"
-git pull
-git push
-git fetch 
-git status
-git merge
-```
-
 
 # pipeline with stages and parameters
 ```
@@ -118,7 +102,17 @@ pipeline {
 }
 ```
 
-# 20 commands of linux
+# webhook
 ```
-compgen -c
+ngrok http 8080
+webhook create
+webhook ngrok http link paste /github-webhook/
+webhook applicaton json
+build triggers : github hook trigger for gitscm polling
+pipeline: defn: pipeline script from scm
+scm git
+repo url
+script path: hello-world/Jenkinsfile
+build manually once
+FInally update github repo
 ```

@@ -48,4 +48,9 @@ java ulala %string1% %string2%
 
 
 
-
+5.
+for parameters code
+echo "Your name is %str1%"
+echo "Your Surname is %str2%"
+echo "Your Favorite City is %city%"
+echo "Are you a student %student%"

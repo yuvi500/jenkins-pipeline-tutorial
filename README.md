@@ -133,3 +133,35 @@ script path: hello-world/Jenkinsfile
 build manually once
 FInally update github repo
 ```
+
+# Puppet
+### Commands to run on puppet Master
+```
+sudo apt-get update
+wget https://apt.puppetlabs.com/puppet-release-bionic.deb
+sudo dpkg -i puppet-release-bionic.deb
+sudo apt-get install puppetmaster
+apt policy puppetmaster
+sudo systemctl status puppet-master.service
+sudo nano /etc/default/puppet-master
+Add this line in the puppet master file: JAVA_ARGS=“-Xms512m -
+Xmx512m”
+sudo systemctl restart puppet-master.service
+sudo ufw allow 8140/tcp
+sudo nano /etc/hosts
+sudo puppet cert list
+sudo puppet cert sign --all
+```
+
+### Commands to run on slave node/ puppet agent
+```
+sudo apt-get update
+wget https://apt.puppetlabs.com/puppet-release-bionic.deb
+sudo dpkg -i puppet-release-bionic.deb
+sudo apt-get install puppet
+sudo nano /etc/hosts
+
+sudo systemctl start puppet
+sudo systemctl enable puppet
+sudo puppet agent --test
+```

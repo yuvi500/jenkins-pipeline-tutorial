@@ -18,7 +18,9 @@ build manually once
 FInally update github repo
 ```
 
-4.
+# java jenkins
+### without parameters
+```
 make java file
 build execute windows batch command
 D:
@@ -47,7 +49,7 @@ D:
 cd D:\joBhiHai
 javac ulala.java
 java ulala %string1% %string2%
-
+```
 
 
 5.

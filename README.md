@@ -167,3 +167,43 @@ sudo systemctl start puppet
 sudo systemctl enable puppet
 sudo puppet agent --test
 ```
+
+# Puppet Manifest
+### On Master terminal
+sudo mkdir -p /etc/puppet/code/environments/production/manifests/
+cd /etc/puppet/code/environments/production/manifests/
+sudo nano site.pp
+Following manifests to be written in site.pp
+
+file {'/tmp/shree.txt':
+ensure => present,
+mode =>  '0644',
+content => "it works on ${ipaddress_eth0}! \n",
+}
+
+node default{
+package {'nginx':
+ensure => installed,
+}
+file {'/tmp/status.txt':
+content => 'nginx installed',
+mode =>  '0644',
+}
+
+}
+node default {
+exec { 'apt-update': 
+# exec resource named 'apt-update'
+command => '/usr/bin/apt-get update' 
+# command this resource will run
+}
+# install apache2 package
+package { 'apache2':
+require => Exec['apt-update'], 
+# require 'apt-update' before install$
+ensure => installed,
+}
+}
+
+### On slave terminal
+After writing every manifest, sudo puppet agent --test

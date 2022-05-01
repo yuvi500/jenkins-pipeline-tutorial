@@ -118,7 +118,7 @@ pipeline {
 }
 ```
 
-#20 commands of linux
+# 20 commands of linux
 ```
 compgen -c
 ```

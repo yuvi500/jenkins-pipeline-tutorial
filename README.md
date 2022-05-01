@@ -52,15 +52,17 @@ java ulala %string1% %string2%
 ```
 
 
-5.
-for parameters code
+# batch jenkins
+### for parameters code
+```
 echo "Your name is %str1%"
 echo "Your Surname is %str2%"
 echo "Your Favorite City is %city%"
 echo "Are you a student %student%"
+```
 
-
-3.
+# git fetch push pull merge
+```
 git init
 git clone url
 cd 
@@ -72,9 +74,11 @@ git push
 git fetch 
 git status
 git merge
+```
 
 
-8.
+# pipeline with stages and parameters
+```
 pipeline {
   agent any
   stages {
@@ -112,7 +116,9 @@ pipeline {
     }
   }
 }
+```
 
-
-20 commands of linux
+#20 commands of linux
+```
 compgen -c
+```

@@ -68,3 +68,45 @@ git push
 git fetch 
 git status
 git merge
+
+
+8.
+pipeline {
+  agent any
+  stages {
+    stage('Form') {
+      input {
+        message "Please fill this form"
+        parameters {
+          string(name: 'PERSON', defaultValue: '', description: 'Your Name: ')
+          booleanParam(name: 'STUDENT', defaultValue: true, description: 'Student')
+          choice(name: 'DIVISION', choices: ['A', 'B'], description: 'Pick division')
+          text(name: 'PID', defaultValue: '', description: 'Enter your PID')
+        }
+      }
+      steps {
+        echo "Hello, ${params.PERSON}"
+        echo "Toggle: ${params.TOGGLE}"
+        echo "Choice: ${params.CHOICE}"
+        echo "PID: ${params.PID}"
+      }
+    }
+    stage('info') {
+            steps {
+                echo 'This was your information'
+            }
+        }
+    stage('Bye') {
+            steps {
+                echo 'Bye'
+            }
+        }
+  }
+  post {
+    failure {
+      echo 'The build was unsuccessful, try again later.'
+    }
+  }
+}
+
+

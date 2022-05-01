@@ -13,6 +13,7 @@ pipeline: defn: pipeline script from scm
 scm git
 repo url
 script path: hello-world/Jenkinsfile
+build manually once
 FInally update github repo
 
 

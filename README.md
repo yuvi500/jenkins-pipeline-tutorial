@@ -147,7 +147,8 @@ sudo nano /etc/default/puppet-master
 Add this line in the puppet master file: JAVA_ARGS="-Xms512m -Xmx512m"
 sudo systemctl restart puppet-master.service
 sudo ufw allow 8140/tcp
-sudo nano /etc/hosts - masterip puppet
+sudo nano /etc/hosts
+add line here "masterip puppet"
 
 
 Run these two commands at the end
@@ -161,7 +162,8 @@ sudo apt-get update
 wget https://apt.puppetlabs.com/puppet-release-bionic.deb
 sudo dpkg -i puppet-release-bionic.deb
 sudo apt-get install puppet
-sudo nano /etc/hosts - masterip puppet
+sudo nano /etc/hosts
+add line here "masterip puppet"
 
 sudo systemctl start puppet
 sudo systemctl enable puppet

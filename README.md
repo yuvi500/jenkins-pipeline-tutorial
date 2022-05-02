@@ -141,6 +141,10 @@ docker run -it ubuntu
 exit
 
 docker inspect ubuntu
+docker history ubuntu
+
+docker commit container_id imagename
+
 docker tag imagename username/nameOfRepository
 docker push username/nameOfRepository
 check if image has been uploaded to your dockerhub

@@ -123,7 +123,7 @@ pipeline {
 # Docker
 ```
 container name/container id can be used
-image name/image idcan be used
+image name/image id can be used
 
 docker search ubuntu
 docker pull ubuntu

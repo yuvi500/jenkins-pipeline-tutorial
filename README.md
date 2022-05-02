@@ -151,7 +151,7 @@ sudo nano /etc/hosts
 add line here "master-ip puppet"
 
 
-Run these two commands at the end
+Run these two commands at the end(after every slave command is executed)
 sudo puppet cert list
 sudo puppet cert sign --all
 ```

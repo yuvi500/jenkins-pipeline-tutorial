@@ -95,8 +95,8 @@ pipeline {
       }
       steps {
         echo "Hello, ${params.PERSON}"
-        echo "Toggle: ${params.TOGGLE}"
-        echo "Choice: ${params.CHOICE}"
+        echo "Toggle: ${params.STUDENT}"
+        echo "Choice: ${params.DIVISION}"
         echo "PID: ${params.PID}"
       }
     }

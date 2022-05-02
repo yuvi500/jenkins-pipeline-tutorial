@@ -129,11 +129,12 @@ docker search ubuntu
 docker pull ubuntu
 docker images
 
-docker run --name containername ubuntu
+docker run -t -d ubuntu
 docker ps
 docker pause containername
 docker unpause containername
 docker stop containername
+docker run --name containername ubuntu
 docker ps -a
 docker rm containername
 

@@ -66,7 +66,7 @@ echo "Are you a student %student%"
 # maven and ant
 ### maven
 ```
-SCM: GIT
+source code management: GIT
 enter git link for maven
 goals and options: clean compile test package
 
@@ -74,7 +74,7 @@ output directory : C:\ProgramData\Jenkins\.jenkins\workspace\maventry\target
 ```
 ### ant
 ```
-SCM: GIT
+Source code management: GIT
 enter git link for ant
 build: invoke ant
 ant version :ant

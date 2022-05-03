@@ -8,7 +8,6 @@ pwd
 nano hi.txt
 touch test.txt
 echo "hello" > file3.txt
-nano file4.txt
 cp hi.txt file6.txt
 mv hi.txt file7.txt
 df

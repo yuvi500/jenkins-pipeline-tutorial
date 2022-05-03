@@ -179,6 +179,33 @@ FInally update github repo
 ```
 
 # Puppet
+### Creating instances
+```
+Ubuntu 18.04 Free tier
+number of instances : 2
+Configure security Group : Type - All TCP, Source - Anywhere
+Create new key pair
+name it
+download key pair
+```
+
+### Generating PPK file
+```
+open putty gen
+load
+select pem file
+save private key
+```
+
+### Connecting Via putty
+```
++ssh
+go to auth
+select ppk file
+session - add ip
+open
+```
+
 ### Commands to run on puppet Master
 ```
 sudo apt-get update

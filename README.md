@@ -149,6 +149,7 @@ image name/image id can be used
 docker search ubuntu
 docker pull ubuntu
 docker images
+docker images -q
 
 docker run -t -d ubuntu
 docker ps
@@ -158,6 +159,9 @@ docker stop containername
 docker run --name containername ubuntu
 docker ps -a
 docker rm containername
+docker rmi imagename
+
+docker stats
 
 docker run -it ubuntu
 exit
@@ -170,6 +174,8 @@ docker commit container_id imagename
 docker tag imagename username/nameOfRepository
 docker push username/nameOfRepository
 check if image has been uploaded to your dockerhub
+
+docker container prune
 
 ```
 

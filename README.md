@@ -156,7 +156,8 @@ docker ps
 docker pause containername
 docker unpause containername
 docker stop containername
-docker run --name containername ubuntu
+docker run --name containername hello
+docker kill ubuntu
 docker ps -a
 docker rm containername
 docker rmi imagename

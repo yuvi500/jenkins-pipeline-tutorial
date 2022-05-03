@@ -1,6 +1,26 @@
 # 20 commands of linux
 ```
-compgen -c
+ifconfig
+mkdir hi
+ls
+cd hi
+pwd
+nano hi.txt
+touch test.txt
+echo "hello" > file3.txt
+nano file4.txt
+cp hi.txt file6.txt
+mv hi.txt file7.txt
+df
+du
+rm file6.txt
+mkdir bye
+rmdir bye
+man pwd
+pwd --help
+locate hi.txt
+uname
+sudo apt-get update
 ```
 
 # git fetch push pull merge

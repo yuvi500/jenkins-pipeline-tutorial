@@ -18,7 +18,6 @@ mkdir bye
 rmdir bye
 man pwd
 pwd --help
-locate hi.txt
 uname
 sudo apt-get update
 ```

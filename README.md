@@ -69,6 +69,7 @@ echo "Are you a student %student%"
 SCM: GIT
 enter git link for maven
 goals and options: clean compile test package
+
 output directory : C:\ProgramData\Jenkins\.jenkins\workspace\maventry\target
 ```
 ### ant
